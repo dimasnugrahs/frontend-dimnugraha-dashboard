@@ -1,6 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import LayoutDefault from "./components/layout/LayoutDefault";
-import ScrollToTop from "./components/layout/ScrolltoTop";
 import HomePage from "./pages/HomePage";
 import Dashboard from "./pages/Dashboard";
 
@@ -29,8 +27,6 @@ import LayoutDashboard from "./components/layout/LayoutDashboard";
 function App() {
   return (
     <Router>
-      <ScrollToTop />
-
       <Routes element={<LayoutDashboard />}>
         <Route path="/" element={<HomePage />} />
         <Route path="/dashboard" element={<Dashboard />} />
